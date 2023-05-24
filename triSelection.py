@@ -17,7 +17,7 @@ def plus_petit(tableau):
     for i in range(1, len(tableau)):
         if tableau[i] < tableau[indice_petit]:
             indice_petit = i          
-    return indice_petit
+    return indice_petit #on retourne ici l'indice
 
 
 tab = [random.randint(0,20) for i in range(10)]
