@@ -7,7 +7,7 @@ def tri_selection(tableau):
         for j in range(en_cours+1,nb) :
             if tableau[j] < tableau[plus_petit] :
                 plus_petit = j
-        if min is not en_cours :
+        if plus_petit is not en_cours :
             temp = tableau[en_cours]
             tableau[en_cours] = tableau[plus_petit]
             tableau[plus_petit] = temp
@@ -20,7 +20,7 @@ def plus_petit(tableau):
     return indice_petit #on retourne ici l'indice
 
 
-tab = [random.randint(0,20) for i in range(10)]
+tab = [random.randint(-90,90) for i in range(10)]
 tab1 = [12]
 print (plus_petit(tab1))
 print(tab)
