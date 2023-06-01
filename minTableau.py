@@ -9,5 +9,5 @@ def minTab(tab):
             minIndex = j
     return tab[minIndex]
 
-scores = array('i',[4,12,2,8,80,70,1,88])
+scores = array('i',[4,12,2,8,80,70,1,88,0])
 print (minTab(scores))
